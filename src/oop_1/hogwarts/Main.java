@@ -18,5 +18,6 @@ public class Main {
         potter.compareTo(malfoy);
 
 
+
     }
 }
