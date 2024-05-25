@@ -27,16 +27,20 @@ public abstract class HogwartsStudent {
 
     public void compareTo(HogwartsStudent other) {
         if (this.scoreSum() < other.scoreSum()) {
-            System.out.println("Сильнее студент " + other.getName());
+            System.out.printf("При сравнении %s и %s сильнее %s%n", this.getName(), other.getName(), other.getName());
         } else if (this.scoreSum() > other.scoreSum()){
-            System.out.println("Сильнее студент " + this.getName());
+            System.out.printf("При сравнении %s и %s сильнее %s%n", this.getName(), other.getName(), this.getName());
         } else {
-            System.out.printf("Студенты %s и %s равны по силе %n ", this.getName(), other.getName());
+            System.out.printf("При сравнении %s и %s студенты равны %n", this.getName(), other.getName());
         }
     }
 
     private int scoreSum() {
         return magicPower + transgressionDistance;
+    }
+
+    public void print() {
+        System.out.println(this);
     }
 
     @Override

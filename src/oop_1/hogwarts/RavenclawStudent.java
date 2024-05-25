@@ -43,6 +43,7 @@ public class RavenclawStudent extends HogwartsStudent {
 
     }
 
+
     private int scoreSum() {
         return intelligence + wisdom + wit + creativity;
     }
