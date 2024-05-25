@@ -15,6 +15,19 @@ public class Main {
         HufflepuffStudent sedrik = new HufflepuffStudent("Седрик Диггори", 9, 3,
                 5, 2,12);
 
-        potter.compareTo(malfoy);
+        HogwartsStudent[] students = {potter, germiona, malfoy, goil, sedrik};
+
+        for (HogwartsStudent student : students) {
+            student.print();
+        }
+
+        for (int i = 0; i < students.length; i++) {
+            HogwartsStudent first = students[i];
+            for (int j = i + 1; j < students.length; j++) {
+                HogwartsStudent second = students[j];
+                first.compareTo(second);
+            }
+            
+        }
     }
 }

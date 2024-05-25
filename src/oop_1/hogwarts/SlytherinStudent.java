@@ -36,6 +36,7 @@ public class SlytherinStudent extends HogwartsStudent {
         return powerLust;
     }
 
+
     public void innerCompareTo(SlytherinStudent other) {
         if (this.scoreSum() < other.scoreSum()) {
             System.out.println("Сильнее студент " + other.getName());

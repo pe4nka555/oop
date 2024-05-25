@@ -40,6 +40,7 @@ public class GryffindorStudent extends HogwartsStudent{
         return nobility + honor + bravery;
     }
 
+
     @Override
     public String toString() {
         return super.toString() + ", nobility=" + nobility +

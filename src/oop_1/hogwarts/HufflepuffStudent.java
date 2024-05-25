@@ -22,6 +22,7 @@ public class HufflepuffStudent extends HogwartsStudent {
         return loyalty;
     }
 
+
     public int getHonesty() {
         return honesty;
     }
